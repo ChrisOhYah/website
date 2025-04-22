@@ -2,6 +2,10 @@ body {
   background-color: black;
 }
 
-h1 {
+.TextMain {
+  color: white;
+}
+
+.Credits {
   color: white;
 }
