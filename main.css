@@ -4,8 +4,33 @@ body {
 
 .TextMain {
   color: white;
+  text-align: center; 
+  position: absolute; 
+  top: 10%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  font-family: cursive;
 }
 
 .Credits {
   color: white;
+  text-align: center;
+  position: absolute;
+  top: 95%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  font-family: cursive;
+}
+
+.ImageChan {
+  width: 18%; 
+  position: absolute; 
+  top: 55%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  border-radius: 50px;
+}
+
+.click-me {
+  color: lightblue;
 }
