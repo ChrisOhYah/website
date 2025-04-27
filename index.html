@@ -17,7 +17,7 @@
       But, hey, here's your chan:
       </h1>
     </div>
-    <img src="gothgirl.png" alt="Chan wow." class="ImageChan">
+    <img src="gothgirl.png" alt="Chan wow." class="ImageChan" id="chanimage">
     <div class="Credits">
       <h4>
         Made by: not_chr1s_
@@ -25,3 +25,18 @@
     </div>
   </body>
 </html>
+
+<script>const macWindow = document.getElementById('chanimage');
+  document.addEventListener('mousemove', function(e) {
+    const windowRect = macWindow.getBoundingClientRect();
+    const windowCenterX = windowRect.left + windowRect.width / 2;
+    const windowCenterY = windowRect.top + windowRect.height / 2;
+    
+    const deltaX = (e.clientX - windowCenterX) / (windowRect.width / 2);
+    const deltaY = (e.clientY - windowCenterY) / (windowRect.height / 2);
+    const tiltAmount = 10;
+    const rotateX = -deltaY * tiltAmount;
+    const rotateY = deltaX * tiltAmount;
+    
+    macWindow.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;})
+</script>
